@@ -4,7 +4,13 @@ using System.Text;
 
 namespace TipCalculator.Core.Services
 {
-    class CalculationService
-    {
-    }
+	public class CalculationService : ICalculationService
+	{
+		public decimal TipAmount(decimal subTotal, double generosity)
+		{
+			return subTotal * (decimal)(generosity / 100);
+		}
+	}
+
+
 }

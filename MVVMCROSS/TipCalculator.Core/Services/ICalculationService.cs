@@ -4,7 +4,9 @@ using System.Text;
 
 namespace TipCalculator.Core.Services
 {
-    interface ICalculationService
+    public interface ICalculationService
     {
+        decimal TipAmount(decimal subTotal, double generosity);
     }
+
 }
